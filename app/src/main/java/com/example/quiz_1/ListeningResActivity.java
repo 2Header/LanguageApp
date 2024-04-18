@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,21 +22,26 @@ public class ListeningResActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_listening_res);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
         btnNext3 = findViewById(R.id.btnNext3);
-        final String Answ = getIntent().getStringExtra("Answ");
+        userText = findViewById(R.id.userText3);
+        final ImageView btnBack1 = findViewById(R.id.btnBack1);
+        btnBack1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ListeningResActivity.this, ListeningActivity.class));
+                finish();
+            }
+        });
 
-        if (Answ.equals("cucumber")){
-            userText.setText(Answ);
+        final String answer = getIntent().getStringExtra("answer");
+        System.out.println(answer);
+
+        if (answer.equals("cucumber")){
+            userText.setText(answer);
             userText.setTextColor(Color.parseColor("#5ba890"));
         }else{
-            userText.setText(Answ);
+            userText.setText(answer);
             userText.setTextColor(Color.parseColor("#d6185d"));
         }
         btnNext3.setOnClickListener(new View.OnClickListener() {

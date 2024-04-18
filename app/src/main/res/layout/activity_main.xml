@@ -46,7 +46,9 @@
     <TextView
         android:id="@+id/Top"
         android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
         android:layout_height="20dp"
+        android:layout_marginStart="10dp"
         android:text="Top users"
         android:textColor="@color/black"
         android:textStyle="bold"/>
@@ -76,13 +78,12 @@
                 android:layout_width="206dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Vincent van Gogh"
+                android:text="Vincentus van Goghgus"
                 android:textColor="@color/black" />
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
-
                 android:gravity="right"
                 android:text="12 points"
                 android:textColor="#000000" />
@@ -115,7 +116,7 @@
                 android:layout_width="206dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Albert Einstein"
+                android:text="Albertus Einsteinius"
                 android:textColor="@color/black" />
 
             <TextView
@@ -155,7 +156,7 @@
                 android:layout_width="206dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Vldius Draculus"
+                android:text="Vldius Drapopus"
                 android:textColor="@color/black" />
 
             <TextView
@@ -174,6 +175,8 @@
         android:id="@+id/chose"
         android:layout_width="match_parent"
         android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
         android:text="Available exersises"
         android:textColor="@color/black"
         android:textStyle="bold"/>
@@ -184,7 +187,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@+id/chose"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:weightSum="2">
@@ -245,7 +248,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_below="@+id/line1"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="15dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:weightSum="2">

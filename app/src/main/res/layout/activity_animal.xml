@@ -39,6 +39,7 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:src="@drawable/luna_cat"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -46,6 +47,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:text="Write who is on image" />
+
     <EditText
         android:id="@+id/userText1"
         android:layout_width="match_parent"

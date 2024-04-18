@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AnimalActivity">
+    android:orientation="vertical"
+    tools:context=".ListeningActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -17,17 +17,17 @@
             android:id="@+id/btnBack1"
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:src="@drawable/arrow3"
             android:layout_centerVertical="true"
-            android:layout_marginStart="15dp"/>
+            android:layout_marginStart="15dp"
+            android:src="@drawable/arrow3" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:textColor="#FFFF"
             android:text="Listening"
-            android:textStyle="bold"/>
+            android:textColor="#FFFF"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
@@ -35,14 +35,13 @@
         android:id="@+id/qua"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:gravity="center"
         android:padding="10dp"
         android:text="cucumber"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="match_parent"
@@ -62,40 +61,26 @@
         android:layout_marginEnd="20dp"
         android:gravity="center"
         android:padding="10dp"
-        android:textStyle="bold"
         android:text="Please press button and say this word. Our sevice will chek your pronunciation"
-        />
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="40dp"
         android:layout_marginEnd="20dp"
         android:text="Your result" />
+
     <EditText
         android:id="@+id/userText3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="20dp"
         android:background="@drawable/round_back_gray"
-        android:padding="15dp"/>
-
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnCheckText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="20dp"
-        android:background="@drawable/round_back_blue"
-        android:onClick="speak"
-        android:padding="15dp"
-        android:text="Check Text"
-        android:textColor="#FFFF"
-        android:textStyle="bold" />
+        android:padding="15dp" />
 
 
     <androidx.appcompat.widget.AppCompatButton
@@ -111,5 +96,4 @@
         android:text="Check"
         android:textColor="#FFFF"
         android:textStyle="bold" />
-
 </LinearLayout>

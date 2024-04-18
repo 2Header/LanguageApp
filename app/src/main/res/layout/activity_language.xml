@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LanguageActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#410FA3">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="#FFFF"
+            android:text="Language select"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="What is your Mother language?"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="17dp"
+        android:textStyle="bold"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRus"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/round_back_orange_bl"
+        android:textColor="#000000"
+        android:onClick="onClickRussian"
+        android:text="Russian" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEng"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/round_back_orange_bl"
+        android:textColor="#000000"
+        android:onClick="onClickEnglish"
+        android:text="English" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnCh"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/round_back_orange_bl"
+        android:textColor="#000000"
+        android:onClick="onClickChinese"
+        android:text="Chinese" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnKz"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/round_back_orange_bl"
+        android:textColor="#000000"
+        android:onClick="onClickKazakh"
+        android:text="Kazakh" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBr"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center_vertical|left"
+        android:background="@drawable/round_back_orange_bl"
+        android:textColor="#000000"
+        android:onClick="onClickBelarus"
+        android:text="Belarus" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="15dp"
+        android:onClick="onClickChoose"
+        android:text="choose"
+        android:background="@drawable/round_back_blue"
+        android:textStyle="bold"
+        android:textColor="#FFFF" />
+
+</LinearLayout>
